@@ -252,6 +252,45 @@ describe "Acceptance::Certificate" do
         )
       end
     end
+
+    context 'when the property has energy performance features' do
+      it 'will show the walls feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="walls-feature">Brick wall, no insulation</dd>',
+        )
+      end
+
+      it 'will show the roof feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="roof-feature">Has a roof</dd>',
+        )
+      end
+
+      it 'will show the floors feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="floors-feature">Has some floors</dd>',
+        )
+      end
+
+      it 'will show the windows feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="windows-feature">7 windows</dd>',
+        )
+      end
+
+      it 'will show the main heating feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="main-heating-feature">Room heaters, electric</dd>',
+        )
+      end
+
+      it 'will show the main heating control feature' do
+        expect(response.body).to include(
+          '<dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="main-heating-control-feature">Heating controller</dd>',
+        )
+      end
+    end
+
   end
 
   context "when the assessment exists with recommendations" do

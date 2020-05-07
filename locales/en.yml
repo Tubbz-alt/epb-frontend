@@ -354,6 +354,12 @@ en:
         list:
           total_floor_area: 'Total floor area'
           dwelling_type: 'Property type'
+          walls: 'Walls'
+          roof: 'Roof'
+          floor: 'Floors'
+          window: 'Windows'
+          main_heating: 'Main heating'
+          main_heating_control: 'Main heating control'
       environmental-impact:
         title: "Environmental impact of this property"
         summary: "One of the biggest contributors to climate change is carbon dioxide (%{carbon}). The energy used for heating, lighting and power in our homes produces over a quarter of the UK's %{carbon} emissions."

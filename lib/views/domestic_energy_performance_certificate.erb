@@ -118,6 +118,42 @@
             <%= assessment[:dwellingType] %>
           </dd>
         </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.walls') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="walls-feature"><%= assessment[:walls] %></dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.roof') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="roof-feature"><%= assessment[:roof] %></dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.floor') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="floors-feature"><%= assessment[:floors] %></dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.window') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="windows-feature"><%= assessment[:windows] %></dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.main_heating') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="main-heating-feature"><%= assessment[:mainHeating] %></dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-font-weight-regular">
+            <%= t('domestic_epc.sections.summary.list.main_heating_control') %>
+          </dt>
+          <dd class="govuk-summary-list__value govuk-!-font-weight-bold" id="main-heating-control-feature"><%= assessment[:mainHeatingControl] %></dd>
+        </div>
       </dl>
     </div>
   </div>
