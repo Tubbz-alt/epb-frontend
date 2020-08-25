@@ -7,6 +7,12 @@
   %></p>
 
   <dl class="govuk-summary-list">
+    <div class="govuk-summary-list__row govuk-!-font-weight-bold print-view">
+      <dt class="govuk-summary-list__key govuk-!-width-one-half" style="vertical-align: top"><%= t('dec.sections.previous_energy_ratings.print_row_title_key') %></dt>
+      <dd class="govuk-summary-list__value govuk-!-width-one-half" style="text-align: right">
+        <%= t('dec.sections.previous_energy_ratings.print_row_title_value') %>
+      </dd>
+    </div>
     <div class="govuk-summary-list__row">
       <%== erb :dec__previous_energy_ratings__row, locals: {
         year: current,
