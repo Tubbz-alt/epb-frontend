@@ -1061,6 +1061,8 @@ cy:
       previous_energy_ratings:
         title: "Welsh: Previous energy ratings"
         explanation: "Welsh: This tells you how efficiently energy has been used in this building over the last three accounting periods."
+        print_row_title_key: "Welsh: Date"
+        print_row_title_value: "Welsh: Energy rating"
       co2:
         title: "Total CO2 emissions"
         explanation: "This tells you how much carbon dioxide the building emits. It shows tonnes per year of CO2."
